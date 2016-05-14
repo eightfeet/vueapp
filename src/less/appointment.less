@@ -1,0 +1,284 @@
+//预约营养师
+
+.appo_part1 {
+    padding-top: 5.75rem;
+}
+
+.appo_part2 {
+    display: none;
+    padding-top: 7.16rem;
+    //预约营养家首页2
+    .block_dietitian {
+        .pr;
+        .br;
+        background: #fff;
+        padding: 0.625rem;
+        padding-bottom: 2rem;
+        .faces {
+            width: 9.625rem;
+            height: 9.625rem;
+            -webkit-border-radius: 9.625rem;
+            -moz-border-radius: 9.625rem;
+            border-radius: 9.625rem;
+            background-color: #ebebeb;
+            position: absolute;
+            -webkit-box-shadow: 0 0 0 3px @cyan;
+            -moz-box-shadow: 0 0 0 3px @cyan;
+            box-shadow: 0 0 0 3px @cyan;
+            left: 50%;
+            margin-left: -4.8125rem;
+            margin-top: -6rem;
+            img {
+                width: 100%;
+            }
+        }
+        .maininfo {
+            padding-top: 5.5rem;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 1rem;
+            padding-left: .5rem;
+            position: relative;
+            li {
+                .fl;
+                height: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+        .content {
+            padding: .3rem;
+            .tit {
+                height: @fz-m;
+            }
+            .bdr {
+                -webkit-box-shadow: inset -1px 0 #e2e2e2;
+                -moz-box-shadow: inset -1px 0 #e2e2e2;
+                box-shadow: inset -1px 0 #e2e2e2;
+            }
+            &.bdb {
+                border-bottom: 1px solid #e2e2e2;
+            }
+        }
+    }
+
+}
+
+.key {
+    width: 14.87rem;
+    height: 14.87rem;
+    margin: 0rem auto;
+    display: block;
+    background: url(../images/yy.png) no-repeat;
+    background-size: 100% 200%;
+    background-position: left top;
+    &:active {
+        background-position: left bottom;
+    }
+    &:focus {
+        border: none;
+    }
+}
+
+//自助预约页面
+.selfhelp{
+    width: 96%;
+    margin: 0 auto;
+    .listblock{
+        -webkit-border-radius: @br;
+        -moz-border-radius: @br;
+        border-radius: @br;
+        background-color: #fff;
+        border: solid 1px #d9d9da;
+        padding:1rem .5rem;
+        .face{
+            width:25%;
+            img{
+                width:4.625rem;
+                height:4.625rem;
+                -webkit-border-radius: 9.625rem;
+                -moz-border-radius: 9.625rem;
+                border-radius: 9.625rem;
+                -webkit-box-shadow: 0 0 0 1px @gray-lighter;
+                -moz-box-shadow: 0 0 0 1px @gray-lighter;
+                box-shadow: 0 0 0 1px @gray-lighter;
+                margin-right:.5rem;
+             }
+        }
+        .content{
+            width: 75%;
+            p{line-height:1.5rem }
+            .btnyy{
+                .icon{margin-left: -.2rem;}
+                font-size: .8rem;
+                width: 5.2rem;
+                right: 0rem;
+                bottom:0rem;
+            }
+            .zt{
+                position: absolute;
+                right: 0;
+                top: 0;
+                color:@cyan;
+            }
+        }
+    }
+}
+
+
+//确定预约页面
+.page_dietitian{
+    background: #fff;
+    .faces {
+            width: 9.625rem;
+            height: 9.625rem;
+            -webkit-border-radius: 9.625rem;
+            -moz-border-radius: 9.625rem;
+            border-radius: 9.625rem;
+            background-color: #ebebeb;
+            -webkit-box-shadow: 0 0 0 3px @cyan;
+            -moz-box-shadow: 0 0 0 3px @cyan;
+            box-shadow: 0 0 0 3px @cyan;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            img {
+                width: 100%;
+            }
+        }
+        .name{
+                .cyan;
+                .pa;
+                width: 7rem;
+                right: 1rem;
+                top:9.6rem;
+                li{list-style-position:inside; list-style-type: disc;}
+            }
+        .info{
+                width: 90%;
+                margin: 0 auto;
+        }
+        h3{
+            font-size: @fz-m;
+            background: #eaeaea;
+            .lh-l;
+            padding-left: 1.2rem;
+            color:@gray;
+
+            background-image: url(../images/point.png);
+            background-repeat: no-repeat;
+            background-size:0.41rem;
+            background-position: .6rem center;
+
+        }
+        .devide{
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .dataM{}
+        .dataD{}
+}
+
+//详细页面
+.dietitiandetailed{
+    background: #fff;
+    .star{display: inline-block;
+    *display: inline;
+    *zoom: 1; height:1rem; width:1rem;
+        background-image: url(../images/star.png);
+        background-size:1rem;
+        background-repeat: no-repeat;
+        margin-right: .1rem;
+        &.s1{}&.s2{background-position: 0 center;}&.s3{background-position: 0 bottom;}
+    }
+    .changebtn{
+        width: 1.2rem;
+        height: 3.87rem;
+        position: absolute;
+        left: 2rem;
+        top:7rem;
+        background-image: url(../images/left.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+    .changebtn_b{
+        width: 1.2rem;
+        height: 3.87rem;
+        position: absolute;
+        right: 2rem;
+        top:7rem;
+        background-image: url(../images/left.png);
+        background-size: 100%;
+        -webkit-transform: rotate(180deg);/*Safari 4+,Google Chrome 1+ */
+        -moz-transform: rotate(180deg);/*Firefox 3.5+*/
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);/*ie*/
+        background-repeat: no-repeat;
+    }
+    .faces {
+            width: 12.75rem;
+            height: 12.75rem;
+            -webkit-border-radius: 13rem;
+            -moz-border-radius: 13rem;
+            border-radius: 13rem;
+            background-color: #ebebeb;
+            -webkit-box-shadow: 0 0 0 2px @cyan;
+            -moz-box-shadow: 0 0 0 2px @cyan;
+            box-shadow: 0 0 0 2px @cyan;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            img {
+                width: 100%;
+            }
+        }
+        &.devide{
+            border-top: .833rem solid #f8f8f8;
+        }
+        .commit{
+            h3{border-bottom: 1px solid #ddd; height:2rem; font-size:@fz; span{color:#54a4fd;} }
+            .commitblock{
+
+                .minface{
+                    width: 15%; text-align: right;
+                    img{
+                        width:3.5rem; height:3.5rem;
+
+                        -webkit-border-radius: 13rem;
+                        -moz-border-radius: 13rem;
+                        border-radius: 13rem;
+                        -webkit-box-shadow: 0 0 0 1px #d9d9da;
+                        -moz-box-shadow: 0 0 0 1px #d9d9da;
+                        box-shadow: 0 0 0 1px #d9d9da;
+                    }
+
+                    p{}
+                }
+                .con{
+                    width: 83%;
+                    h4{ span{.pa;right: 0; color:@gray-light;}.pr;.lh-s;}
+                    border-bottom:1px solid @gray-lighter ;
+                }
+            }
+        }
+
+        .daytable{
+            width: 100%;
+            border-left: 1px solid #d9d9d9;
+            border-bottom: 1px solid #d9d9d9;
+            th{height: 2.625rem; color:#fff; background: #48c5c7;}
+            td{
+                text-align: center;height: 2.625rem;
+                border-right: 1px solid #d9d9d9;
+                border-top: 1px solid #d9d9d9;
+                background-color: #f4f4f4;
+                position: relative;
+                &.time{
+                    background-color: #fff;
+                }
+            }
+        }
+}
+
+
+
+
+
+

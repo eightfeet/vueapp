@@ -1,0 +1,743 @@
+//我的地盘
+.card{
+    .banner{
+        width: 83.2%;
+        margin: 0 auto;
+        img{width: 100%;}
+    }
+    .toolblock{
+        color:@gray;
+        font-weight: normal;
+        -webkit-border-radius:@br;
+        -moz-border-radius:@br;
+        border-radius:@br;
+        background-color: #fff;
+        border: solid 1px @gray-lighter/1.1;
+        h3{
+            border-bottom: 1px solid @gray-lighter;
+            padding-left: 1rem;
+        }
+        ul{
+            padding-left: 3.541rem;
+            li{
+                height:3.6rem; line-height: 3.6rem;
+                position: relative;
+                .icon{position: absolute; top:.8rem; left:-2.5rem; }
+                .icon_more_s{left:auto;right:.5rem; top:1.3rem;}
+                border-bottom: 1px solid @gray-lighter;
+            }
+            li:last-child{
+                border-bottom:none;
+            }
+        }
+
+        //个人资料
+        .icon{
+            width: 1.8333rem;
+            height: 1.8333rem;
+            line-height:1.8333rem;
+            img{
+                border-radius:10rem; 
+                display: block;
+                width:1.8333rem;
+                height:1.8333rem;  
+            }
+        }
+    }
+}
+
+.sexselect{
+    li{
+        width: 6rem;
+        span{
+            position: absolute;
+            &.icon{left:0rem; top:.4rem;}
+            &.feature{
+                left:4rem; top:.8rem;
+            }
+        }
+    }
+}
+
+//用户地址
+ .userlocation{
+        color:@gray;
+        font-weight: normal;
+        -webkit-border-radius:@br;
+        -moz-border-radius:@br;
+        border-radius:@br;
+        background-color: #fff;
+        border: solid 1px @gray-lighter/1.1;
+        li{
+            border-bottom: 1px solid @gray-lighter/1.1;
+            height: 2.708rem;
+            line-height: 2.708rem;
+            padding-left:28%;
+            position: relative;
+            span{position: absolute; left: 1rem; width: 5rem; text-align: right;}
+            .inputtext{
+                border: none;
+                display: block;
+                padding:0;
+                width:100%;
+                height: 2.708rem;
+            }
+            .inputselect{
+                border:none;
+                padding-top: 0rem;
+                padding-bottom: 0rem;
+                padding-left: 0rem;
+                height: 2.5rem;
+                padding-right: 0rem;
+                width: 100%;
+                text-align: left;
+            }
+            &.nbb{border-bottom: none;}
+        }
+}
+
+
+//订单列表
+.userorderlist{
+    padding-top: 3rem;
+    .orderblock{
+        background-color: @white;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        h3{
+            border-bottom: 1px solid  @gray-lighter/1.05; height: 3rem; line-height: 3rem;
+            .pr;
+            span{position: absolute; right: 1rem; .gray;}
+        }
+
+        .blockimg{
+            border: 1px solid @gray-lighter/1.05;
+            width: 90%;
+        }
+        .icon_more_b{
+            margin-top:1.5rem;
+            position: absolute;
+            right: 1rem;
+        }
+    }
+
+    .wem{
+        width: 12rem;
+    }
+
+    .ordproblock{
+        .blockimg{
+            border: 1px solid @gray-lighter/1.05;
+            width: 90%;
+        }
+        border-bottom: 6px solid #fff;
+    }
+}
+
+//我的订单
+.userorder{
+    .banner{
+        padding-top: 3rem;
+        position: relative;
+        .bar{
+            background-color:rgba(0,0,0,.3);
+            height:auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2.5rem;
+            line-height:2.5rem;
+            padding-left: 1rem;
+        }
+        img{width: 100%; display: block;}
+         .faces {
+            width: 6rem;
+            height: 6rem;
+            -webkit-border-radius: 9.625rem;
+            -moz-border-radius: 9.625rem;
+            border-radius: 9.625rem;
+            background-color: @gray-lighter;
+            position: absolute;
+            -webkit-box-shadow: 0 0 0 1px @white;
+            -moz-box-shadow: 0 0 0 1px @white;
+            box-shadow: 0 0 0 1px @white;
+            left: 50%;
+            bottom:50%;
+            margin-bottom: -3rem;
+            margin-left: -3rem;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .orderinfo{
+        li{
+            padding-top: 1rem;
+            height: 3rem;
+            p{border-right: 1px dashed @gray-lighter/1.1;height: 2.4rem;}
+            .nbd{border-right:none; }
+        }
+    }
+
+    .orderfeature{
+        .pr;
+        height: 3.6rem;
+        border-top: 1px solid @gray-lighter/1;
+        line-height: 3.6rem;
+        padding-left: 2.5rem;
+        .icon_wddd{position: absolute; left: 0; top: .8rem;}
+        .icon_more_s{position: absolute; right:0; top:1.2rem; }
+    }
+}
+
+//订单详情
+.orderdtbg{
+    background-color: #f8f8f8;
+}
+
+//我的奖励
+.myprize{
+    padding-top: 4rem;
+    .prizeblock{
+        padding: .9rem;
+         color:@gray;
+        font-weight: normal;
+        -webkit-border-radius:@br;
+        -moz-border-radius:@br;
+        border-radius:@br;
+        background-color: #fff;
+        border: solid 1px @gray-lighter/1.05;
+        .br{border-right: 1px solid  @gray-lighter;}
+        .icon{position: absolute; right: .2rem; top:.3rem}
+    }
+    .ewm{
+    width:16rem;
+    }
+    .wlq{top:0; right:0;}
+}
+
+ //健康档案
+    .faces_b {
+            width: 5rem;
+            height: 5rem;
+            -webkit-border-radius: 9.625rem;
+            -moz-border-radius: 9.625rem;
+            border-radius: 9.625rem;
+            background-color: #ebebeb;
+            -webkit-box-shadow: 0 0 0 1px #eee;
+            -moz-box-shadow: 0 0 0 1px #eee;
+            box-shadow: 0 0 0 1px #eee;
+        }
+.archives{
+    .block_dietitian {
+        .pr;
+        .br;
+        background: #fff;
+        padding: 0.625rem;
+        .statubar{
+            top:0;
+        }
+        .faces {
+            width: 5rem;
+            height: 5rem;
+            -webkit-border-radius: 9.625rem;
+            -moz-border-radius: 9.625rem;
+            border-radius: 9.625rem;
+            background-color: #ebebeb;
+            position: absolute;
+            -webkit-box-shadow: 0 0 0 1px #eee;
+            -moz-box-shadow: 0 0 0 1px #eee;
+            box-shadow: 0 0 0 1px #eee;
+            left: 1rem;
+            top:1rem;
+            overflow: hidden;
+        }
+        .maininfo {
+            padding-top: 5.5rem;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 1rem;
+            padding-left: .5rem;
+            position: relative;
+            li {
+                .fl;
+                height: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+
+    }
+
+    .timeline{
+        min-height:35rem;
+        border-left: 2px solid @cyan;
+
+        .recordblock{
+            margin-bottom: 2rem;
+            position: relative;
+             color:@gray;
+            font-weight: normal;
+            -webkit-border-radius:@br;
+            -moz-border-radius:@br;
+            border-radius:@br;
+            background-color: #fff;
+            border: solid 1px @gray-lighter/1.05;
+            .br{border-right: 1px solid  @gray-lighter;}
+            .face{
+                  width: 3rem;
+                    height: 3rem;
+                    position: absolute;
+                    top:0;
+                    left:-4.5rem;
+                    -webkit-border-radius: 9.625rem;
+                    -moz-border-radius: 9.625rem;
+                    border-radius: 9.625rem;
+                    background-color: #ebebeb;
+                    position: absolute;
+                    -webkit-box-shadow: 0 0 0 1px #eee;
+                    -moz-box-shadow: 0 0 0 1px #eee;
+                    box-shadow: 0 0 0 1px #eee;
+            }
+
+            .lineicon{
+                 top:-0.2rem;
+                    left:-3.2rem;
+                    position: absolute;
+            }
+
+            h3{
+                height: 2.5rem;
+                padding-left: 1rem;
+                .white;
+                background-color: @cyan;
+                line-height: 2.5rem;
+                border-radius: @br @br 0 0;
+                .arrow{
+                    width:0;
+                    height:0;
+                    border-top:.7rem solid transparent;
+                    border-bottom:.7rem solid transparent;
+                    border-right:.7rem solid @cyan;
+                    position: absolute;
+                    left:-0.6rem;
+                    top:0.6rem;
+                }
+                .time{position: absolute; text-align: center;
+                    font-size: @fz-s;
+                    top: 0rem;
+                 color: @gray; left:-7.4rem; width: 4rem; line-height: 1rem;}
+            }
+            ul{
+                padding: .9rem;
+                span{position: relative;}
+            }
+
+            .mark{position: absolute;
+                right: 0.5rem;
+                top: 4rem;
+            }
+
+        }
+    }
+}
+
+
+
+//我的营养师
+.mydietitian{
+    padding-top: 3.5rem;
+    .tab{
+        top:3rem !important;
+    }
+
+
+
+    .block_dietitian {
+        .pr;
+        .br;
+        background: #fff;
+        padding: 0.625rem;
+        .statubar{
+            top:0;
+        }
+        .faces {
+            width: 5rem;
+            height: 5rem;
+            -webkit-border-radius: 9.625rem;
+            -moz-border-radius: 9.625rem;
+            border-radius: 9.625rem;
+            background-color: #ebebeb;
+            position: absolute;
+            -webkit-box-shadow: 0 0 0 1px #eee;
+            -moz-box-shadow: 0 0 0 1px #eee;
+            box-shadow: 0 0 0 1px #eee;
+            left: 1rem;
+            top:1rem;
+            overflow: hidden;
+        }
+        .maininfo {
+            padding-top: 5.5rem;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 1rem;
+            padding-left: .5rem;
+            position: relative;
+            li {
+                .fl;
+                height: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+
+    }
+
+    .timeline{
+        min-height:35rem;
+        border-left: 2px solid @cyan;
+
+        .recordblock{
+            margin-bottom: 1rem;
+            position: relative;
+             color:@gray;
+            font-weight: normal;
+            -webkit-border-radius:@br;
+            -moz-border-radius:@br;
+            border-radius:@br;
+            background-color: #fff;
+            border: solid 1px @gray-lighter/1.05;
+            .br{border-right: 1px solid  @gray-lighter;}
+            .face{
+                  width: 3rem;
+                    height: 3rem;
+                    position: absolute;
+                    top:0;
+                    left:-4.5rem;
+                    -webkit-border-radius: 9.625rem;
+                    -moz-border-radius: 9.625rem;
+                    border-radius: 9.625rem;
+                    background-color: #ebebeb;
+                    position: absolute;
+                    -webkit-box-shadow: 0 0 0 1px #eee;
+                    -moz-box-shadow: 0 0 0 1px #eee;
+                    box-shadow: 0 0 0 1px #eee;
+            }
+
+            h3{
+                height: 2.5rem;
+                padding-left: 1rem;
+                .white;
+                background-color: @cyan;
+                line-height: 2.5rem;
+                border-radius: @br @br 0 0;
+                .arrow{
+                    width:0;
+                    height:0;
+                    border-top:.7rem solid transparent;
+                    border-bottom:.7rem solid transparent;
+                    border-right:.7rem solid @cyan;
+                    position: absolute;
+                    left:-0.6rem;
+                    top:0.6rem;
+                }
+                .time{position: absolute; text-align: center;
+                    font-size: @fz-s;
+                    top: 0.8rem;
+                 color: @gray; left:-8.5rem; width: 4rem; line-height: 1rem;}
+            }
+            ul{
+                padding: .9rem;
+                span{position: relative;}
+            }
+
+            .mark{position: absolute;
+                right: 0.5rem;
+                top: 4rem;
+            }
+
+        }
+    }
+
+}
+
+//预约详细页面
+.appdetails{
+    padding-top:3rem;
+    h3{height:3rem ; line-height:3rem; padding-left:1rem  }
+    .face{
+                  width: 7rem;
+                    height:7rem;
+
+                    -webkit-border-radius: 9.625rem;
+                    -moz-border-radius: 9.625rem;
+                    border-radius: 9.625rem;
+                    background-color: #ebebeb;
+                    -webkit-box-shadow: 0 0 0 1px #eee;
+                    -moz-box-shadow: 0 0 0 1px #eee;
+                    box-shadow: 0 0 0 1px #eee;
+            }
+
+    .br{border-right: 1px solid #eee;}
+
+    .bb{border-bottom: 1px solid #eee;}
+
+    .yjfk{
+        .starbar{
+            height: 3rem;
+            line-height: 3rem;
+            padding-left: 8rem;
+            .pr;
+            .tit{position: absolute; left: 0; top:0rem;}
+            .star{padding-top:.4rem; display: inline-block; }
+        }
+        textarea{border: solid 1px @gray-lighter/1.05; display: block; width:98%;  padding:.2rem;  border-radius:@br; }
+    }
+}
+
+
+//附近门店
+.nearby{
+    .itemblock{
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        border-bottom: .8rem solid #f2f2f2;
+        .storepic{
+                  width: 4.5rem;
+                    height:4.5rem;
+
+                    -webkit-border-radius: 9.625rem;
+                    -moz-border-radius: 9.625rem;
+                    border-radius: 9.625rem;
+                    background-color: #ebebeb;
+                    -webkit-box-shadow: 0 0 0 1px #eee;
+                    -moz-box-shadow: 0 0 0 1px #eee;
+                    box-shadow: 0 0 0 1px #eee;
+        }
+        .dh{right: 0; bottom: 0; width:4rem }
+    }
+}
+
+//维权
+.rights{
+    .bb{border-bottom: 1px solid #eee;}
+    .rightlist{
+        padding-left: 4rem;
+        li{
+            border-bottom: 1px solid #eee; height: 3rem; line-height:3rem;
+            .pr;
+            .icon{
+                position: absolute;
+                left: -3rem;
+                top:.5rem;
+                &.icon_more_s{
+                    left:auto;
+                    right:1rem;
+                    top:.9rem;
+                }
+            }
+            .num{
+                position: absolute;
+                right: 3rem;
+                .al-r;
+            }
+         }
+    }
+}
+
+
+//wifi
+.wifibg{
+    background-image:url("@{baseurl}/bg.jpg");
+    background-size: 100%;
+}
+.setwifi{
+    background-image:url("@{baseurl}/regbg.png");
+    height: 27.5rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    .bb{border-bottom: 1px solid #fff;}
+
+    li{
+        height: 2.5rem; line-height:2.5rem;
+        margin-bottom: 1rem;
+        input{
+            padding: 0; border: 0;
+            width: 100%;
+            height: 2.5rem;
+            background-color: transparent;
+        }
+     }
+
+}
+
+
+//手机修改
+.teledit{
+    .stepbar{
+       .circle_a{
+         width: 4rem;
+         .white;
+         vertical-align: middle;
+         display:table-cell;
+        height: 4rem;
+        -webkit-border-radius:  4rem;
+        -moz-border-radius:  4rem;
+        border-radius:  4rem;
+        background-color: #43bda4;
+        border: solid .2rem #43bda4;
+        text-align: center;
+       }
+
+       .circle_b{
+         width: 4rem;
+         vertical-align: middle;
+         display:table-cell;
+        height: 4rem;
+        -webkit-border-radius:  6rem;
+        -moz-border-radius:  6rem;
+        border-radius:  6rem;
+        background-color: @white;
+        border: solid .2rem #43bda4;
+        text-align: center;
+        color:@cyan;
+       }
+    }
+}
+
+//健康档案结果
+.healthdetail{
+    .resultcontent{
+        width:96%;
+        background: #fff;
+        -webkit-border-radius:  .4rem;
+        -moz-border-radius:  .4rem;
+        border-radius:  .4rem;
+        margin: 1.5rem auto 0rem auto;
+        .pin{
+            display:block;
+            position: absolute;
+            width:.6rem;
+            height:2.3rem;
+            background: #b3e0fe;   
+            -webkit-border-radius:  1rem;
+            -moz-border-radius:  1rem;
+            border-radius:  1rem;
+            top:3.5rem;
+        }
+        .leftpin{
+            left:10%; 
+        }
+        .rightpin{
+            right:10%; 
+        }
+        .maincon{
+            width:96%;
+            margin:0 auto; 
+        }
+        .bigtitle{
+            height:3.5rem; 
+            border-bottom: .2rem solid #ffbcc9;
+            color:#88cbf7;
+            text-align: center;
+            line-height: 5rem;
+            position: relative;
+            width:80%;
+            margin:0 auto; 
+            .spanleft{
+                display: block;
+                position: absolute;
+                width: .2rem;
+                height: .2rem;
+                left: .2rem;
+                bottom: -0.2rem;
+                background: #fff;
+            }
+            .spanright{
+                display: block;
+                position: absolute;
+                width: .2rem;
+                height: .2rem;
+                right: .2rem;
+                bottom: -0.2rem;
+                background: #fff;
+            }
+        }
+    }
+}
+
+//营养师服务结果
+.appresult{
+    h3{
+        height: 2rem;
+        line-height:2rem;
+        background: #dbeffd;
+        span{
+            display: inline-block;
+            height: 2rem;
+            line-height:2rem;
+            padding-left:.5rem;
+            background: #88cbf7;
+            color:#fff;
+            font-weight: normal;
+            padding-right:1.5rem;
+            -webkit-border-radius: 0 1rem 1rem 0;
+            -moz-border-radius: 0 1rem 1rem 0;
+            border-radius: 0 1rem 1rem 0;
+        }
+    }
+
+    .r_block{
+        width:90%;
+        margin:.5rem auto;  
+        padding:2.5%; 
+        background: #f3fafe;
+        -webkit-border-radius:  .4rem;
+        -moz-border-radius:  .4rem;
+        border-radius:  .4rem;
+    }
+    .r_block_b{
+        width:90%;
+        margin:.5rem auto;  
+        padding:2.5%; 
+    }
+    h4{
+        color: #ffbcc9;
+        padding-bottom:.5rem; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
