@@ -91,22 +91,22 @@ import headerbar from './components/publick/header.vue'
   </thead>   
   <tbody>
     <tr>
-      <td>lefticon</td>
+      <td>lefticon,righticon</td>
       <td>Boolean</td>
       <td>true</td>
-      <td>有左图标</td>
+      <td>是否有左，右图标</td>
     </tr>
     <tr>
-      <td>lefticonname</td>
+      <td>lefticonname,righticonname</td>
       <td>String</td>
       <td>true</td>
-      <td>左图标名称</td>
+      <td>左，右图标名称</td>
     </tr>
     <tr>
-      <td>handlerlefticon</td>
+      <td>handlerlefticon,handlerrighticon</td>
       <td>String</td>
       <td>true</td>
-      <td>左图标事件</td>
+      <td>左，右图标事件</td>
     </tr>
     <tr>
       <td>title</td>
