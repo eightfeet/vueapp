@@ -1,10 +1,9 @@
-# avue
-
+# vue-app项目
 > ef
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -24,4 +23,48 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 组件介绍
+### loading
+引入
+
+```javascript
+import loading from './components/publick/loading.vue'
+```
+
+参数
+
+<table>   
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>   
+  </thead>   
+  <tbody>
+    <tr>
+      <td>show</td>
+      <td>Boolean</td>
+      <td>false</td>
+      <td>是否显示loading
+      </td>
+    </tr>
+    <tr>
+      <td>top</td>
+      <td>Number</td>
+      <td>3</td>
+      <td>距离页面顶部，默认为3，这样能显示头部（头部高度为3rem）
+      </td>
+    </tr>
+  </tbody>
+</table>
+  使用
+```html
+<topbar
+class="white fz-m"
+:lefticonname= "lefticonname"
+:handlerlefticon= "actionback"
+:title="apptitle"
+></topbar>
+```
