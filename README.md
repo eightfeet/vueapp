@@ -51,6 +51,13 @@ import loading from './components/publick/loading.vue'
       </td>
     </tr>
     <tr>
+      <td>loadersize</td>
+      <td>Number</td>
+      <td>1</td>
+      <td>loading尺寸默认为1rem
+      </td>
+    </tr>
+    <tr>
       <td>top</td>
       <td>Number</td>
       <td>3</td>
@@ -61,10 +68,9 @@ import loading from './components/publick/loading.vue'
 </table>
   使用
 ```html
-<topbar
-class="white fz-m"
-:lefticonname= "lefticonname"
-:handlerlefticon= "actionback"
-:title="apptitle"
-></topbar>
+<loading
+  :show="authenticating"
+  :loadersize="loadersize"
+  :top="loadertop">
+</loading>
 ```
