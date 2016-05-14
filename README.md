@@ -74,3 +74,45 @@ import loading from './components/publick/loading.vue'
   :top="loadertop">
 </loading>
 ```
+### headerbar
+引入
+```javascript
+import headerbar from './components/publick/header.vue'
+```
+参数
+<table>   
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>   
+  </thead>   
+  <tbody>
+    <tr>
+      <td>lefticon</td>
+      <td>Boolean</td>
+      <td>true</td>
+      <td>有左图标</td>
+    </tr>
+    <tr>
+      <td>lefticonname</td>
+      <td>String</td>
+      <td>true</td>
+      <td>左图标名称</td>
+    </tr>
+    <tr>
+      <td>handlerlefticon</td>
+      <td>String</td>
+      <td>true</td>
+      <td>左图标事件</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>String</td>
+      <td>Title</td>
+      <td>标题</td>
+    </tr>
+  </tbody>
+</table>

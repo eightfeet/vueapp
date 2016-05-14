@@ -18,12 +18,12 @@
 </style>
 
 <template>
-  <topbar
+  <headerbar
   class="white fz-m"
   :lefticonname= "lefticonname"
   :handlerlefticon= "actionback"
   :title="apptitle"
-  ></topbar>
+  ></headerbar>
   <loading
     :show="authenticating"
     :loadersize="loadersize"
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import topbar from './components/publick/header.vue'
+import headerbar from './components/publick/header.vue'
 import loading from './components/publick/loading.vue'
 
 export default {
@@ -72,7 +72,7 @@ export default {
   },
   replace: false,
   components: {
-    topbar,
+    headerbar,
     loading
   }
 }
