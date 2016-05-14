@@ -116,5 +116,4 @@ import headerbar from './components/publick/header.vue'
     </tr>
   </tbody>
 </table>
-
-http://eightfeet.github.io/vueapp/src/othes/vueappfont/demo.html
+[图标样式列表](./src/othes/vueappfont/demo.html)
