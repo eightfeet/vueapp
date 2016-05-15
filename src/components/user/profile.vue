@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h3>user profile</h3>
-    <p>{{$route.params.userId}} {{$route.params.something}}</p>
+  <div class="gray al-c">
+    <h4>params</h4>
+    <p>param:{{$route.params.userId}}&nbsp;param:{{$route.params.something}}</p>
   </div>
 </template>

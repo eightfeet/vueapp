@@ -1,14 +1,22 @@
 <template>
   <div>
-    <h2>ABOUT US...</h2>
-     <a v-link="{ path: '/about/about_me' }">aboutMe{{message}}</a>
-     <p>{{val}}</p>
-     <br/><br/>
+    <h4 class="gray">预约页面</h4>
+    <div class="w3-3-3">
+      <buttonbar
+        v-touch:tap="handlerSubRouter"
+        class="mgb1 w3"
+        small="true"
+        setstyle="b">
+        子路由
+      </buttonbar>
+    </div>
+    <span class="gray">{{message}}</span>
      <router-view class="view" transition="test" transition-mode="out-in" keep-alive></router-view>
   </div>
 </template>
 
 <script>
+import buttonbar from '../publick/button.vue'
 module.exports = {
   route: {
     // three options:
@@ -45,18 +53,25 @@ module.exports = {
     data (transition) {
       setTimeout(function () {
         transition.next({
-          message: '改变了message数据',
+          message: '路由激活改变了message数据',
           val: 'val!'
         })
       }, 2000)
     }
   },
-
+  methods: {
+    handlerSubRouter () {
+      this.$route.router.go('/about/about_me')
+    }
+  },
   data () {
     return {
-      message: '111111',
+      message: 'message默认数据',
       val: 'this is val!'
     }
+  },
+  components: {
+    buttonbar
   }
 }
 </script>

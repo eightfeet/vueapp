@@ -176,3 +176,44 @@ import buttonbar from './components/publick/button.vue'
   按钮
 </buttonbar>
 ```
+
+### modal
+引入
+
+```javascript
+import modal from './components/publick/modal.vue'
+```
+
+参数
+
+<table>   
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>   
+  </thead>   
+  <tbody>
+    <tr>
+      <td>show</td>
+      <td>Boolean</td>
+      <td>true</td>
+      <td>是否显示modal
+      </td>
+    </tr>
+  </tbody>
+</table>
+  使用
+```html
+<modal :show.sync="showModal">
+  <h3 slot="header" class="fz-ll cyan al-c pdt2 icon-attention-alt">确认</h3>
+  <div slot="body" class="al-c fz-m lh-s pdt1 pdb1">
+    ...
+  </div>
+  <div slot="footer">
+    ...
+  </div>
+</modal>
+```

@@ -874,7 +874,9 @@ select {
   text-align: center
 }
 .maincontent {
-  width: 90%;
+  width: 90%
+}
+.maincontent, .mcenter {
   margin: 0 auto
 }
 .al-l {
@@ -2428,6 +2430,46 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 .headerbar .rightTap {
   right: 0
 }
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease
+}
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle
+}
+.modal-container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: .3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif
+}
+.modal-body {
+  margin: .8rem auto;
+  width: 96%
+}
+.modal-default-button {
+  float: right
+}
+.modal-enter, .modal-leave {
+  opacity: 0
+}
+.modal-enter .modal-container, .modal-leave .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1)
+}
 .loadingbox {
   background-color: hsla(0, 0%, 100%, 0);
   z-index: 119;
@@ -2550,4 +2592,4 @@ a.mainbtn, a.mainbtn_b, a.mainbtn_disable {
   color: red
 }
 
-/*# sourceMappingURL=app.2770d3f84ac118dd3fbc332fb3f09bf5.css.map*/
+/*# sourceMappingURL=app.118229f7d353ce21fba677e1f33868fa.css.map*/

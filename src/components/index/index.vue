@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>inbox! {{message.text}}</h2>
+    <h3 class="gray">inbox! {{message.text}}</h3>
     <router-view></router-view>
   </div>
 </template>

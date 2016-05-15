@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>User yo</h2>
+    <h3><span class="icon-users gray">&nbsp;Hi! User</span></h3>
     <router-view></router-view>
   </div>
 </template>
