@@ -18,7 +18,7 @@
       v-touch:tap="handlerrighticon"
     >
     </span>
-    {{title}}
+    <slot></solt>
   </div>
 </template>
 
@@ -58,10 +58,6 @@ export default {
     handlerrighticon: {
       type: Function,
       default: () => false
-    },
-    title: {
-      type: String,
-      default: 'Title'
     }
   },
   ready () {

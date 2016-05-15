@@ -108,12 +108,71 @@ import headerbar from './components/publick/header.vue'
       <td>true</td>
       <td>左，右图标事件</td>
     </tr>
-    <tr>
-      <td>title</td>
-      <td>String</td>
-      <td>Title</td>
-      <td>标题</td>
-    </tr>
   </tbody>
 </table>
 [app 图标](http://eightfeet.github.io/vueapp/src/othes/vueappfont/demo.html)
+
+使用
+```html
+<headerbar
+  class="white fz-m"
+  :lefticonname= "lefticonname"
+  :handlerlefticon= "actionback">
+  {{apptitle}}
+</headerbar>
+```
+
+### buttonbar
+引入
+```javascript
+import buttonbar from './components/publick/button.vue'
+```
+参数
+<table>   
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>   
+  </thead>   
+  <tbody>
+    <tr>
+      <td>iconfixedleft,iconfixedright</td>
+      <td>Boolean</td>
+      <td>true</td>
+      <td>是否有左，右图标</td>
+    </tr>
+    <tr>
+      <td>setstyle</td>
+      <td>String</td>
+      <td>a</td>
+      <td>a和b两种样式</td>
+    </tr>
+    <tr>
+      <td>disable</td>
+      <td>Boolean</td>
+      <td>false</td>
+      <td>是否禁用</td>
+    </tr>
+    <tr>
+      <td>small</td>
+      <td>Boolean</td>
+      <td>false</td>
+      <td>是否小图标</td>
+    </tr>
+  </tbody>
+</table>
+
+使用
+```html
+<buttonbar
+  class="icon-left al-l mgb1"
+  disable="false"
+  setstyle="a"
+  small="true"
+  iconfixedright="true">
+  按钮
+</buttonbar>
+```
