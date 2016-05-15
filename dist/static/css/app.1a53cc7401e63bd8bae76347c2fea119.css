@@ -915,7 +915,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  background-image: url(http://eightfeet.github.io/vueapp/dist/static/img/iconmix.2821026.png);
+  background-image: url(../img/iconmix.2821026.png);
   background-repeat: no-repeat;
   background-size: 33.3333rem 33.3333rem
 }
@@ -1150,8 +1150,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 }
 @font-face {
   font-family: fontello;
-  src: url(http://eightfeet.github.io/vueapp/dist/static/fonts/fontello.b47f3a3.eot);
-  src: url(http://eightfeet.github.io/vueapp/dist/static/fonts/fontello.b47f3a3.eot#iefix) format('embedded-opentype'), url(http://eightfeet.github.io/vueapp/dist/static/img/fontello.df6b90c.svg#fontello) format('svg');
+  src: url(../fonts/fontello.b47f3a3.eot);
+  src: url(../fonts/fontello.b47f3a3.eot#iefix) format('embedded-opentype'), url(../img/fontello.df6b90c.svg#fontello) format('svg');
   font-weight: 400;
   font-style: normal
 }
@@ -1429,7 +1429,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 }
 .dataLoading {
   height: 5rem;
-  background-image: url(http://eightfeet.github.io/vueapp/dist/static/img/dataloadingbbb.6dee361.gif);
+  background-image: url(../img/dataloadingbbb.6dee361.gif);
   background-size: 1.75rem;
   background-repeat: no-repeat;
   background-position: 50%
@@ -1491,7 +1491,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   height: 14.87rem;
   margin: 0 auto;
   display: block;
-  background: url(http://eightfeet.github.io/vueapp/dist/static/img/yy.9a360b7.png) no-repeat;
+  background: url(../img/yy.9a360b7.png) no-repeat;
   background-size: 100% 200%;
   background-position: 0 0
 }
@@ -2269,7 +2269,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   text-align: right
 }
 .wifibg {
-  background-image: url(http://eightfeet.github.io/vueapp/dist/static/img/bg.f51a3df.jpg);
+  background-image: url(../img/bg.f51a3df.jpg);
   background-size: 100%
 }
 .setwifi {
@@ -2442,7 +2442,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 .loading {
   background-color: #fff;
   z-index: 120;
-  background-image: url(http://eightfeet.github.io/vueapp/dist/static/img/loading.b0a4036.gif);
+  background-image: url(../img/loading.b0a4036.gif);
   background-size: 6.75rem;
   background-repeat: no-repeat;
   background-position: center 45%
@@ -2513,6 +2513,7 @@ a.cyan:hover, a.cyan:link, a.cyan:visited {
   text-align: center;
   width: 100%;
   font-weight: 700;
+  font-size: 1rem;
   display: block
 }
 .mainbtn {
@@ -2524,6 +2525,8 @@ a.mainbtn, a.mainbtn_b, a.mainbtn_disable {
 .iconfl:before {
   position: absolute;
   left: 1rem;
+  height: 1rem;
+  line-height: 1rem;
   top: 50%;
   margin-top: -.5rem
 }
@@ -2538,6 +2541,8 @@ a.mainbtn, a.mainbtn_b, a.mainbtn_disable {
 .iconfr:before {
   position: absolute;
   right: 1rem;
+  height: 1rem;
+  line-height: 1rem;
   top: 50%;
   margin-top: -.5rem
 }
@@ -2545,4 +2550,4 @@ a.mainbtn, a.mainbtn_b, a.mainbtn_disable {
   color: red
 }
 
-/*# sourceMappingURL=app.581b90615c370744bc653520dd4d3a1a.css.map*/
+/*# sourceMappingURL=app.1a53cc7401e63bd8bae76347c2fea119.css.map*/

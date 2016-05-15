@@ -157,6 +157,7 @@ a.cyan:hover,a.cyan:visited,a.cyan:link{color: @cyan;}
     text-align: center;
     width: 100%;
     font-weight: bold;
+    font-size: @fz;
     display: block;
   }
   .mainbtn{
@@ -167,6 +168,7 @@ a.cyan:hover,a.cyan:visited,a.cyan:link{color: @cyan;}
       text-align: center;
       width: 100%;
       font-weight: bold;
+      font-size: @fz;
       display: block;
   }
   a.mainbtn,a.mainbtn_disable,a.mainbtn_b{ line-height:2.5rem }
@@ -174,6 +176,8 @@ a.cyan:hover,a.cyan:visited,a.cyan:link{color: @cyan;}
   .iconfl:before{
     position: absolute;
     left: 1rem;
+    height:1rem;
+    line-height: 1rem;
     top: 50%;
     margin-top:-0.5rem;
   }
@@ -188,6 +192,8 @@ a.cyan:hover,a.cyan:visited,a.cyan:link{color: @cyan;}
   .iconfr:before{
     position: absolute;
     right: 1rem;
+    height:1rem;
+    line-height: 1rem;
     top: 50%;
     margin-top:-0.5rem;
   }
