@@ -3,8 +3,8 @@
     <div
       class="loading"
       v-bind:style="{
-        top:`${top}rem`,
-        backgroundSize:`${loadersize}rem`,
+        top:top+'rem',
+        backgroundSize:loadersize+'rem'
       }"
     >
     </div>
@@ -23,7 +23,7 @@ export default {
     },
     top: {
       type: Number,
-      default: 3
+      default: 0
     },
     loadersize: {
       type: Number,
@@ -50,7 +50,6 @@ export default {
       z-index: 120;
       left: 0;
       right: 0;
-      top: 0;
       bottom: 0;
       background-image: url(../../images/loading.gif);
       background-size:162/24rem;
